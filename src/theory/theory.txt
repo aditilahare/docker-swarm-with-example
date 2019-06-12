@@ -26,3 +26,51 @@
 * What is Docker Swarm?
     Docker Swarm is a Container Orchestration Tool which helps to deployment, scaling and management of container.
 
+* Docker swarm is designed to work around 4 simple principles :-
+    1. Simple docker api’s with great user experience
+    2. Resilient zero single-point-of-failure architecture
+    3. Secure by default with automatically generated certificates
+    4. Backward compatibility with existing components
+
+* Difference between Docker Swarm and K8's :-
+    1. In Kubernetes, installation is manual and it takes serious planning to make Kubernetes up and running.
+       But Docker swarm is simple in architecture and anytime you can join any node to cluster.
+    2. You should know Docker CLI to navigate within a structure and then supplemental Kubernetes common language infrastructure to run for those programs.
+       Since Docker Swarm is a tool of Docker, same common language is used to navigate within a structure. This provides variability and speed to this tool and gives Docker a significant usability edge.
+    3. Kubernetes supports multiple versions of logging and monitoring when the services are deployed within the cluster.
+       Docker Swarm is supported for only monitoring with the third party applications.
+
+* Benefits of Kubernetes :-
+
+    1. Kubernetes is backed by the Cloud Native Computing Foundation (CNCF).
+    2. Kubernetes have an impressively huge community among container orchestration tools. Over 50,000 commits and 1200 contributors.
+    3. Kubernetes is an open source and modular tool that works with any OS.
+    4. Kubernetes provides easy service organization with pods.
+
+* Drawbacks of Kubernetes :-
+
+    1. When doing it yourself, Kubernetes installation can be quite complex with steep learning curve. An option to solve this issue is to opt for a managed Kubernetes-as-a-service such as ours.
+    2. In Kubernetes, it is required to have a separate set of tools for management, including kubectl CLI.
+    3. It is Incompatible with existing Docker CLI and Compose tools.
+
+* Benefits of Docker Swarm
+
+    1. Docker Swarm is easy to install with a fast setup
+    2. Docker Swarm is a lightweight installation. It is simpler to deploy and Swarm mode is included in the Docker engine.
+    3. Docker Swarm has an easier learning curve.
+    4. Docker Swarm smoothly integrates with Docker Compose and Docker CLI. That’s because these are native Docker tools. Most of the Docker CLI commands will work with Swarm.
+
+* Drawbacks of Docker Swarm
+
+    1. Docker Swarm provides limited functionality.
+    2. Docker Swarm has limited fault tolerance.
+    3. Docker Swarm have smaller community and project as compared to Kubernetes community.
+    4. In Docker Swarm, services can be scaled manually.
+
+
+
+
+
+
+
+
