@@ -1,0 +1,6 @@
+* Docker swarm official documentation :-
+    - https://docs.docker.com/v17.09/engine/swarm/
+
+* K8's vs. Docker swarm :-
+    - https://vexxhost.com/blog/kubernetes-vs-docker-swarm/
+

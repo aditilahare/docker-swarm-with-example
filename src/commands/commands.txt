@@ -1,0 +1,37 @@
+* Create your own Docker swarm cluster by following commands :- (If you have docker desktop for mac)
+
+   # Create virtual machine as a node :-
+    1. docker-machine create machine1
+    2. docker-machine create machine2
+    3. docker-machine create machine3
+    4. docker-machine create machine4
+
+   # SSH into those nodes :-
+    1. docker-machine ssh machine1
+    2. docker-machine ssh machine2
+    3. docker-machine ssh machine3
+    4. docker-machine ssh machine4
+
+
+   # Go into machine1
+     1. docker swarm init --advertise-addr 192.168.99.112 (IP address of that node/virtual machine)
+     2. docker swarm join-token manager --> To join other node as a manager
+     3. docker swarm join-token worker  --> To join other node as a worker
+
+   # Go into machine2 machine3 machine4
+     1. docker swarm join --token SWMTKN-1-3haulzj9z38dqrsf7u87ppn56mynj5uoi7x69vruxi8nwaz7zc-8t8icm87n24lbeav17ayz1uke 192.168.99.112:2377
+
+
+   # Now your cluster has following things :-
+     1. machine2, machine3 and machine4 are the three worker
+
+   # You can create your own network in docker zone :-
+     1. docker network create --driver overlay my_network
+
+
+   # Create a nginx service with 4 replicas :-
+      1. docker service create -d --replicas 4 --network my_network -p 8080:80 --name my_nginx nginx
+
+   # Inspect the service
+      1. docker service inspect <ServiceId>
+
