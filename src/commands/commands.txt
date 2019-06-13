@@ -35,3 +35,7 @@
    # Inspect the service
       1. docker service inspect <ServiceId>
 
+
+   # List of worker/managers :-
+      1. docker node ls
+
