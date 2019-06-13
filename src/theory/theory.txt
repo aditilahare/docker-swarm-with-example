@@ -26,6 +26,13 @@
 * What is Docker Swarm?
     Docker Swarm is a Container Orchestration Tool which helps to deployment, scaling and management of container.
 
+* Docker swarm key components :-
+    1. Node - Can be a physical or cloud machine
+    2. Manager - Leader of the node 
+    3. Worker - Part of a node which executes a task
+    4. Service - Multiple containers
+    4. Task - A container - It is the atomic scheduling unit of swarm
+
 * Docker swarm is designed to work around 4 simple principles :-
     1. Simple docker api’s with great user experience
     2. Resilient zero single-point-of-failure architecture
@@ -59,6 +66,7 @@
     2. Docker Swarm is a lightweight installation. It is simpler to deploy and Swarm mode is included in the Docker engine.
     3. Docker Swarm has an easier learning curve.
     4. Docker Swarm smoothly integrates with Docker Compose and Docker CLI. That’s because these are native Docker tools. Most of the Docker CLI commands will work with Swarm.
+    5. Production swarm deployments typically include Docker nodes distributed across multiple physical and cloud machines.
 
 * Drawbacks of Docker Swarm
 
@@ -66,6 +74,7 @@
     2. Docker Swarm has limited fault tolerance.
     3. Docker Swarm have smaller community and project as compared to Kubernetes community.
     4. In Docker Swarm, services can be scaled manually.
+
 
 
 
